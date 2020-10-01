@@ -51,4 +51,12 @@ export class TasksController {
   ): Task {
     return this.tasksService.updateTaskStatus(id, status);
   }
+
+  @Patch('/:id/description')
+  updateTaskDescription(
+    @Param('id') id: string,
+    @Body('description') description: string,
+  ): Task {
+    return this.tasksService.updateTaskDescription(id, description);
+  }
 }
