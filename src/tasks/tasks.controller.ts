@@ -16,7 +16,6 @@ import { CreateTaskDto } from './dto/create-task.dto';
 import { GetTasksFilterDto } from './dto/get-tasks-filter.dto';
 import { TaskStatusValidationPipe } from './pipes/task-status-validation.pipe';
 import { Task } from './task.entity';
-import { DeleteResult } from 'typeorm';
 import { TaskStatus } from './task-status.enum';
 
 @Controller('tasks')
